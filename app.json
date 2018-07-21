@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/mateface/mateface",
+    "pages/index/index",
+    "pages/hat/hat",
+    "pages/more/more"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "小鹿AI-颜值检测",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#f4ea2a",
+    "borderStyle": "#dddddd",
+    "backgroundColor": "#292929",
+    "list": [
+      {
+        "selectedIconPath": "source/tabicon/0000.png",
+        "iconPath": "source/tabicon/000.png",
+        "pagePath": "pages/index/index",
+        "text": "颜值检测"
+      },
+      {
+        "selectedIconPath": "source/tabicon/11.png",
+        "iconPath": "source/tabicon/111.png",
+        "pagePath": "pages/hat/hat",
+        "text": "圣诞帽"
+      },
+      {
+        "selectedIconPath": "source/tabicon/333.png",
+        "iconPath": "source/tabicon/333.png",
+        "pagePath": "pages/mateface/mateface",
+        "text": "夫妻脸"
+      },
+      {
+        "selectedIconPath": "source/tabicon/2222.png",
+        "iconPath": "source/tabicon/222.png",
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  },
+  "debug": true
+}

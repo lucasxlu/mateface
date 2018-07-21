@@ -1,0 +1,40 @@
+<view class="page__bd page__bd_spacing">
+  <!-- <view class="weui-flex">
+    <view class="weui-flex__item">
+      <view class="placeholder">
+        <image class="weui-grid__icon" src="../../source/images/icon_tabbar.png" />
+      </view>
+    </view>
+    <view class="weui-flex__item">
+      <view class="placeholder">
+        <image class="weui-grid__icon" src="../../source/images/icon_tabbar.png" />
+      </view>
+    </view>
+  </view> -->
+  <view class="weui-uploader">
+    <view class="weui-uploader__bd">
+      <view class="weui-uploader__files" id="uploaderFiles">
+        <block wx:for="{{files}}" wx:key="*this">
+          <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+            <image class="weui-uploader__img" src="{{item}}" mode="widthFix" style='width:{{viewsize}}px;height:{{viewsize}}px;' />
+          </view>
+        </block>
+      </view>
+      <view class="weui-uploader__input-box {{ifshow}}">
+        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title" style='margin-top:15px;'>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" maxlength="-1" placeholder="" auto-height value='{{result}}' style="min-height:10em;font-size:10px;" />
+        <!-- <view class="weui-textarea-counter">0/200</view> -->
+      </view>
+    </view>
+  </view>
+  <!-- <button class="weui-btn" type="primary">上传</button> -->
+  <!-- <view class="weui-btn-area">
+    <button type="primary" bindtap="upload" disabled="{{disabled}}">上传</button>
+  </view> -->
+</view>

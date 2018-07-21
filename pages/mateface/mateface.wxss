@@ -1,0 +1,10 @@
+/* pages/mateface.wxss */
+.weui-uploader__file{
+  float: left;
+}
+.weui-uploader__file:nth-child(2n-1) {
+  margin-right: 10px
+}
+.hide{
+ display: none;
+}

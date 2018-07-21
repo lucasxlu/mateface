@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page__bd page__bd_spacing">
+    <button type="default" class="weui-btn" bindtap="chooseimage" hover-class="other-button-hover"> 获取图片 </button>
+    <image wx:if="{{tempFilePaths!=''}}" src="{{tempFilePaths }}" mode="aspecFill" mode='widthFix' style="width: 100%" />
+
+    <button class="weui-btn" type="warn">立即检测</button>
+
+
+  </view>
+</view>
